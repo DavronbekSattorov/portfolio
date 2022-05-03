@@ -419,7 +419,8 @@
 /* Home */
 
 .home-wrapper {
-  height: 70vh;
+  height: fit-content;
+  padding-bottom: 50px;
 }
 
 .home {
@@ -435,6 +436,7 @@
 }
 
 .photo {
+  width: 50%;
   bottom: 80px;
   right: -80px;
 }
