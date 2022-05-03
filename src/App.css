@@ -419,7 +419,7 @@
 /* Home */
 
 .home-wrapper {
-  height: fit-content;
+  height: 70vh;
   padding-bottom: 50px;
 }
 
