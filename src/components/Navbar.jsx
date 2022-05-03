@@ -29,12 +29,12 @@ const Navbar = () => {
                     <Link
                         activeClass="active"
                         className="navbar-link"
-                        to="work"
+                        to="project"
                         spy={true}
                         smooth={true}
                         offset={-190}
                         duration={1000}
-                    >Recent works</Link>
+                    >Projects</Link>
                     <Link
                         activeClass="active"
                         className="navbar-link"
