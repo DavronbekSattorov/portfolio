@@ -388,7 +388,7 @@
 
   /* GENERAL SETTINGS */
 .section-title {
-  width: 80%;
+  width: 90%;
 }
 
   /* Navbar */
@@ -399,16 +399,16 @@
 }
 
 .navbar {
-  width: 80%;
+  width: 90%;
   justify-content: space-between;
 }
 
 .navbar-logo {
-  width: 30%;
+  width: 25%;
 }
 
 .navbar-links {
-  width: 65%;
+  width: 70%;
   justify-content: space-between;
 }
 
@@ -424,7 +424,7 @@
 }
 
 .home {
-  width: 80%;
+  width: 90%;
 }
 
 .home-title {
@@ -438,7 +438,7 @@
 .photo {
   width: 50%;
   bottom: 80px;
-  right: -80px;
+  right: -30px;
 }
 
 /* About */
@@ -448,7 +448,7 @@
 }
 
 .about {
-  width: 80%;
+  width: 90%;
 }
 
 .about-me-text-img {
@@ -498,7 +498,7 @@
 }
 
 .work {
-  width: 80%;
+  width: 90%;
 }
 
 .work-single {
@@ -510,7 +510,7 @@
 /* Contact */
 
 .contact {
-  width: 80%;
+  width: 90%;
 }
 
 .contact-text {
