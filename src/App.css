@@ -1,0 +1,822 @@
+
+/* GENERAL SETTINGS */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Calibri';
+}
+
+
+.section-title {
+  width: 60%;
+  margin: auto;
+  color: #003B46;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.section-title h1 {
+  font-weight: 900;
+  font-size: 45px;
+  z-index: 100;
+}
+
+.section-title-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  top: -10px;
+  left: -10px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Navbar */
+
+.navbar-wrapper {
+  height: 68px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background-color: #003B46;
+  border-bottom: 0.2px solid rgb(136, 136, 136);
+  border-width: 0.2px;
+}
+
+.navbar {
+  width: 60%;
+  margin: auto;
+  height: 98%;
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.navbar-logo {
+  width: 40%;
+}
+
+.navbar-links {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+.navbar-link {
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+
+.navbar-link:hover {
+  color: #ffd771;
+  transition: all 0.5s;
+}
+
+
+.navbar-link-button {
+  font-weight: 700;
+  font-size: 18px;
+  cursor: pointer;
+  height: 45px;
+  padding: 0 15px;
+  border: 1px solid #ffd15c;
+  border-radius: 5px;
+  background-color: transparent;
+  color: white;
+  display: flex;
+  align-items: center;
+}
+
+
+/* Home */
+
+.home-wrapper {
+  height: 100vh;
+  background-color: #003B46;
+
+}
+
+.home {
+  width: 60%;
+  margin: auto;
+  position: relative;
+  height: 90%;
+}
+
+.home-title {
+  width: 50%;
+  color: white;
+  padding-top: 320px;
+}
+
+.home-title h1 {
+  font-size: 80px;
+}
+
+.home-title p {
+  font-size: 30px;
+  margin-top: 30px;
+  color: #7CEAAB;
+  font-weight: 700;
+  transition: all 3s;
+}
+
+.home-name {
+  color: #FB9038;
+}
+.photo {
+  position: absolute;
+  bottom: 40px;
+  right: 0;
+  border-radius: 15px;
+}
+
+/* About */
+
+.about-wrapper {
+  height: fit-content;
+  background-color: #f9f9ff;
+  padding-top: 90px;
+  padding-bottom: 30px;
+}
+
+.about {
+  width: 60%;
+  margin: auto;
+}
+
+.about-me-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-text-img {
+  width: 20%;
+ 
+}
+
+.about-me-text-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about-me-text {
+  width: 70%;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  padding: 20px;
+  border-radius: 10px;
+  font-size: 20px;
+  line-height: 1.5;
+  color: #5e5c7f;
+  word-spacing: 2px;
+}
+
+.about-me-text-marked {
+  color: #ff4c60;
+  font-weight: bolder;
+}
+
+.about-skills {
+  margin-top: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-skill-title {
+  color: #635eac;
+  font-size: 20px;
+  font-weight: 700;
+  text-align: center;
+}
+.about-skill {
+  width: 30%;
+  
+}
+.about-skill-list {
+  height: fit-content;
+  border-radius: 10px;
+  padding: 20px;
+  text-align: center;
+  font-size: 15px;
+  line-height: 1.7;
+}
+
+.about-Ihavedone-wrapper {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-Ihavedone {
+  width: 30%;
+  height: 300px;
+  border-radius: 20px;
+  padding: 25px 10px;
+  text-align: center;
+  line-height: 22px;
+  transition: all 0.5s;
+}
+
+.about-Ihavedone:hover {
+  margin-top: -20px;
+  transition: all 0.5s;
+}
+
+.about-Ihavedone img {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.about-Ihavedone p {
+  font-size: 20px;
+}
+
+
+.done-blue {
+  box-shadow: 0 5px 20px 0 rgb(156, 184, 190 / 50%);
+  background-color: #95B0B7;
+  color: white;
+}
+
+.done-yellow {
+  box-shadow: rgb(249 215 76 / 50%) 0px 5px 20px 0px;
+  background-color: #fad24c;
+  color: #353353;
+}
+
+.done-red {
+  background-color: #F7ABC7;
+  box-shadow: rgb(247, 171, 199 / 50%) 0px 5px 20px 0px;
+  color: white;
+
+}
+
+.quote {
+  font-size: 30px;
+  color: red;
+  font-family: 'MV Boli';
+  padding: 10px;
+}
+
+/* Recent Works */
+
+.works {
+  height: fit-content;
+  padding-top: 90px;
+  padding-bottom: 90px;
+  background-color: #f9f9ff;
+}
+
+.work {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.work-single {
+  width: 30%;
+  height: 300px;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-single a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #635eac;
+}
+
+/* Contact */
+
+.contact-wrapper {
+  height: fit-content;
+  background-color: #f9f9ff;
+}
+
+.contact {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.contact-text {
+  width: 30%;
+}
+
+.contact-message {
+  width: 65%;
+}
+
+.contact-message input {
+  height: 60px;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #454360;
+  background-color: #fff;
+  background-image: none;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 30px;
+  outline: none;
+}
+
+.contact-message-up {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contact-message-up input {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-message-bottom input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contact-message-bottom textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  height: 180px;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #454360;
+  background-color: #fff;
+  background-image: none;
+  border: 0;
+  border-radius: 30px;
+  padding: 20px 30px;
+  outline: none;
+}
+
+.contact-message button {
+  color: #fff!important;
+  background: #ff4c60;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 20px;
+  font-weight: 900;
+  overflow: hidden;
+  line-height: 1;
+  padding: 12px 32px;
+  box-shadow: 0 0 1px transparent;
+  border: none;
+}
+
+.contact-bottom {
+  width: 100%;
+  height: 80px;
+  background-color: #003B46;
+  margin-top: 50px;
+}
+
+@media only screen and (min-width: 768px) {
+
+  /* GENERAL SETTINGS */
+.section-title {
+  width: 80%;
+}
+
+  /* Navbar */
+
+.navbar-wrapper {
+  height: 78px;
+  width: 100%;
+}
+
+.navbar {
+  width: 80%;
+  justify-content: space-between;
+}
+
+.navbar-logo {
+  width: 30%;
+}
+
+.navbar-links {
+  width: 65%;
+  justify-content: space-between;
+}
+
+.navbar-link {
+  font-size: 20px;
+}
+
+/* Home */
+
+.home-wrapper {
+  height: 70vh;
+}
+
+.home {
+  width: 80%;
+}
+
+.home-title {
+  width: 45%;
+}
+
+.home-title h1 {
+  font-size: 80px;
+}
+
+.photo {
+  bottom: 80px;
+  right: -80px;
+}
+
+/* About */
+
+.about-wrapper {
+  padding-top: 70px;
+}
+
+.about {
+  width: 80%;
+}
+
+.about-me-text-img {
+  display: none;
+}
+
+.about-me-text {
+  width: 100%;
+  border-radius: 20px;
+  font-size: 20px;
+}
+
+.about-skill-title {
+  font-size: 24px;
+}
+
+.about-skill {
+  width: 33%;
+}
+
+.about-skill-list {
+  font-size: 18px;
+}
+
+.about-Ihavedone-wrapper {
+  margin-top: 100px;
+}
+
+.about-Ihavedone {
+  width: 32%;
+  height: 280px;
+}
+
+.about-Ihavedone:hover {
+  margin-top: -20px;
+  transition: all 0.5s;
+}
+
+.about-Ihavedone img {
+  width: 40%;
+  margin-bottom: 25px;
+}
+/* Recent Works */
+
+.works {
+  padding-top: 50px;
+}
+
+.work {
+  width: 80%;
+}
+
+.work-single {
+  width: 32%;
+  height: 250px;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+}
+
+/* Contact */
+
+.contact {
+  width: 80%;
+}
+
+.contact-text {
+  width: 25%;
+}
+
+.contact-message {
+  width: 70%;
+}
+
+
+}
+
+@media only screen and (max-width: 600px) {
+  
+/* GENERAL SETTINGS */
+.section-title {
+  width: 90%;
+  margin: auto;
+  color: #003B46;
+  position: relative;
+  margin-bottom: 50px;
+}
+
+.section-title h1 {
+  font-weight: 900;
+  font-size: 45px;
+  z-index: 100;
+}
+
+.section-title-image {
+  height: 100px;
+  width: 100px;
+  border-radius: 10px;
+  top: -10px;
+  left: -10px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* Navbar */
+
+.navbar-wrapper {
+  height: 60px;
+  width: 100%;
+  z-index: 10;
+  position: fixed;
+  background-color: #003B46;
+  border-bottom: 0.2px solid rgb(136, 136, 136);
+  border-width: 0.2px;
+}
+
+.navbar {
+  width: 95%;
+}
+
+.navbar-logo {
+  width: 20%;
+  font-size: 10px;
+}
+
+.navbar-links {
+  width: 80%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.navbar-link {
+  font-weight: 300;
+}
+
+.navbar-link:hover {
+  color: #ffd771;
+  transition: all 0.5s;
+}
+
+
+.navbar-link-button {
+  display: none;
+}
+
+
+/* Home */
+
+.home-wrapper {
+  height: 70vh;
+  background-color: #003B46;
+
+}
+
+.home {
+  width: 90%;
+}
+
+.home-title {
+  width: 90%;
+  padding-top: 220px;
+}
+
+.home-title h1 {
+  font-size: 50px;
+}
+
+.home-title p {
+  font-size: 25px;
+  margin-top: 20px;
+  color: #7CEAAB;
+  font-weight: 700;
+  transition: all 3s;
+}
+
+.photo {
+  display: none;
+}
+
+/* About */
+
+.about-wrapper {
+  height: fit-content;
+  background-color: #f9f9ff;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.about {
+  width: 90%;
+  margin: auto;
+}
+
+.about-me-text-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-me-text-img {
+  display: none;
+  width: 20%;
+}
+
+.about-me-text-img img {
+  width: 100%;
+  border-radius: 10px;
+}
+.about-me-text {
+  width: 100%;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  padding: 10px;
+  border-radius: 20px;
+}
+
+.about-skills {
+  margin-top: 50px;
+}
+
+.about-skill {
+  width: 33%;
+}
+
+.about-skill-list {
+  height: fit-content;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+  line-height: 1.7;
+}
+
+.about-Ihavedone-wrapper {
+  margin-top: 50px;
+  display: inline-block;
+  
+}
+
+.about-Ihavedone {
+  width: 100%;
+  height: 300px;
+  border-radius: 20px;
+  padding: 25px 10px;
+  transition: all 0.5s;
+  margin-bottom: 30px;
+}
+
+.about-Ihavedone:hover {
+  margin-top: 0px;
+  transition: all 0.5s;
+}
+
+.about-Ihavedone img {
+  width: 40%;
+  margin-bottom: 20px;
+}
+.about-Ihavedone p {
+  font-size: 20px;
+}
+
+/* Recent Works */
+
+.works {
+  height: fit-content;
+  padding-top: 10px;
+  padding-bottom: 90px;
+  background-color: #f9f9ff;
+}
+
+.work {
+  width: 90%;
+  margin: auto;
+  display: block;
+  justify-content: space-between;
+}
+
+.work-single {
+  width: 100%;
+  height: 300px;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  border-radius: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.work-single a {
+  font-size: 30px;
+  text-decoration: none;
+  color: #635eac;
+}
+
+/* Contact */
+
+.contact-wrapper {
+  height: fit-content;
+  background-color: #f9f9ff;
+}
+
+.contact {
+  width: 95%;
+  margin: auto;
+  display: block;
+  justify-content: space-between;
+}
+
+.contact-text {
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.contact-message {
+  width: 95%;
+}
+
+.contact-message input {
+  height: 50px;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  color: #454360;
+  background-color: #fff;
+  background-image: none;
+  border: 0;
+  border-radius: 30px;
+  padding: 10px 30px;
+  outline: none;
+}
+
+.contact-message-up {
+  display: flex;
+  justify-content: space-between;
+
+}
+
+.contact-message-up input {
+  width: 48%;
+  margin-bottom: 30px;
+}
+
+.contact-message-bottom input {
+  width: 100%;
+  margin-bottom: 30px;
+}
+
+.contact-message-bottom textarea {
+  width: 100%;
+  margin-bottom: 30px;
+  height: 180px;
+  border: 0;
+  border-radius: 30px;
+}
+
+.contact-message button {
+  color: #fff!important;
+  background: #ff4c60;
+  display: inline-block;
+  border-radius: 30px;
+  font-size: 18px;
+  font-weight: 900;
+  overflow: hidden;
+  line-height: 1;
+  padding: 12px 32px;
+  box-shadow: 0 0 1px transparent;
+  border: none;
+}
+
+.contact-bottom {
+  width: 100%;
+  height: 40px;
+  background-color: #003B46;
+  margin-top: 30px;
+}
+}
