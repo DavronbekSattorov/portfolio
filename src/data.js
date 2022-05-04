@@ -27,7 +27,7 @@ export const projects = [
     },
 {
         name : 'Marketing',
-        link : 'https://sprightly-lily-cd407f.netlify.app/',
+        link : 'https://bucolic-sable-64ff64.netlify.app/',
         githubLink: 'https://github.com/DavronbekSattorov/spacdyna',
         type : 'old'
     },
