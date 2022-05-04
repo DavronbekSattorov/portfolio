@@ -41,7 +41,7 @@ const Projects = () => {
                                 <div className='project-single'>
                                     <a href={el.link} target="_blank">{el.name}</a>
 
-                                    <a href="" className='project-github'>
+                                    <a href={el.githubLink} className='project-github'>
                                        <img src={github} alt=""/>
                                     </a>
                                 </div>
