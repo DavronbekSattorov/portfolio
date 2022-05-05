@@ -166,7 +166,7 @@
 }
 .about-me-text {
   width: 70%;
-  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 15%);
   padding: 20px;
   border-radius: 10px;
   font-size: 20px;
@@ -237,7 +237,7 @@
 
 .done-blue {
   box-shadow: 0 5px 20px 0 rgb(156, 184, 190 / 50%);
-  background-color: #95B0B7;
+  background-color: #56B378;
   color: white;
 }
 
@@ -248,7 +248,7 @@
 }
 
 .done-red {
-  background-color: #F7ABC7;
+  background-color: #00A7D7;
   box-shadow: rgb(247, 171, 199 / 50%) 0px 5px 20px 0px;
   color: white;
 
@@ -276,25 +276,22 @@
 }
 
 .projects-title button {
-  color: #f9f9f9;
-  background: #f99a4d;
+  color: #000607;
   display: inline-block;
-  border-radius: 30px;
   font-size: 20px;
   font-weight: 900;
   overflow: hidden;
   line-height: 1;
-  padding: 12px 32px;
-  box-shadow: 0 0 1px transparent;
   border: none;
-  margin-right: 20px;
+  margin-right: 25px;
   cursor: pointer;
   transition: all 1s;
+  background-color: transparent;
 }
 
 .projects-title button:hover {
-  background: #fb790f;
-  transition: all 1s;
+  color: #fb790f;
+  transition: all 0.5s;
 }
 
 
@@ -302,26 +299,53 @@
 .project-single-wrapper {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-evenly;
+  justify-content: space-between;
   margin-top: 50px;
 }
 
 .project-single {
-  width: 30%;
-  height: 300px;
-  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 10%);
+  width: 47%;
+  height: 170px;
+  box-shadow: 0 5px 20px 0 rgb(69 67 96 / 18%);
   border-radius: 20px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   margin-bottom: 40px;
+  padding: 20px;
   position: relative;
 }
 
+.project-single-name {
+  font-size: 20px;
+  color: #003B46;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+.project-single-lang {
+  display: flex;
+  margin-top: 10px;
+  margin-bottom: 15px;
+  overflow: hidden;
+}
+
+.project-single-lang p {
+  margin-right: 10px;
+  background-color: #077a8e;
+  color: white;
+  padding: 3px 10px;
+  border-radius: 5px;
+
+}
+
 .project-single a {
-  font-size: 30px;
+  font-size: 18px;
   text-decoration: none;
-  color: #635eac;
+  color: #f8364d;
+  background-color: #dedede;
+  margin-right: 10px;
+  padding: 3px 10px;
+  border-radius: 5px;
+  font-weight: 500;
+
 }
 
 .project-github {

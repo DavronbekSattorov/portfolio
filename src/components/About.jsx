@@ -1,6 +1,9 @@
 import dots from '../img/dots.png';
 import user from '../img/my-photo.png';
 import code from '../img/code.png';
+import code1 from '../img/coding.png';
+import code2 from '../img/coding2.png';
+import code3 from '../img/coding3.png';
 
 const About = () => {
     return(
@@ -61,7 +64,7 @@ const About = () => {
 
                 <div className='about-Ihavedone-wrapper'>
                     <div className='about-Ihavedone done-blue'>
-                        <img src={code} alt="" />
+                        <img src={code1} alt="" />
                         <p>
                         <span className='quote'>''</span>
                         Implemented mobile-first design using different CSS techniques and JavaScript libraries
@@ -69,7 +72,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className='about-Ihavedone done-yellow'>
-                    <img src={code} alt="" />
+                    <img src={code2} alt="" />
                     <p>
                         <span className='quote'>''</span>
                         Translated design team’s UX mockups from Figma into responsive, interactive UI components.
@@ -77,7 +80,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className='about-Ihavedone done-red'>
-                    <img src={code} alt="" />
+                    <img src={code3} alt="" />
                     <p>
                         <span className='quote'>''</span>
                         Developed and implemented highly responsive components using React and Redux.

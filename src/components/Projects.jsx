@@ -39,11 +39,20 @@ const Projects = () => {
                         projectList.map(el => {
                             return(
                                 <div className='project-single'>
-                                    <a href={el.link} target="_blank">{el.name}</a>
-
-                                    <a href={el.githubLink} className='project-github' target="_blank">
-                                       <img src={github} alt=""/>
-                                    </a>
+                                    <p className='project-single-name'>{el.name}</p>
+                                    <p className='project-single-desc'>{el.desc}</p>
+                                    <div className='project-single-lang'>
+                                        {
+                                            el.lang.map(el => {
+                                                return(
+                                                    <p>{el}</p>
+                                                )
+                                            })
+                                        }
+                                    </div>
+                                    <a href={el.link} target='_blank'>Demo</a>
+                                    <a href={el.githubLink}target='_blank'>Source</a>
+                                    
                                 </div>
                             )
                         })
