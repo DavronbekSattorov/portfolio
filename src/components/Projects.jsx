@@ -5,21 +5,46 @@ import github from '../img/github.png'
 const Projects = () => {
     console.log(projects)
 
-    const [projectList, setProjectList] = useState(projects);
+    const [projectList, setProjectList] = useState([
+        projects[0],
+        projects[1],
+        projects[2],
+        projects[3],
+    ]);
+
+    const [load, setLoad] = useState(false);
+
     const handleOnClick = (e) => {
         console.log(e.target.outerText)
         if(e.target.outerText === 'Recent projects') {
             const filter = projects.filter(el => el.type === 'new');
+            filter.length > 4 ? setLoad(true) : setLoad(false);
             setProjectList(filter)
+            
         } else if(e.target.outerText === 'Previous projects') {
             const filter = projects.filter(el => el.type === 'old');
+            filter.length > 4 ? setLoad(true) : setLoad(false);
             setProjectList(filter)
         } else {
+            projects.length > 4 ? setLoad(true) : setLoad(false);
             setProjectList(projects)
         }
+
+        
     }
 
+    const handleLoad = () => {
+        let arr = [];
+        let looplength = load ? 4 : projects.length;
+        for(let i = 0; i < looplength; i++) {
+            arr.push(projects[i])
+        }
+
+        setProjectList(arr);
+        setLoad(!load);
+    }
     console.log(projectList);
+    
 
     return(
         <div className="projects">
@@ -58,7 +83,10 @@ const Projects = () => {
                         })
                     }
 
+                    
+
                 </div>
+                    <button onClick={handleLoad} className='project-load'>Load {load ? 'less' : 'more'}</button>
             </div>
         </div>
     )
