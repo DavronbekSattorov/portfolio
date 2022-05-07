@@ -324,8 +324,10 @@
   display: flex;
   margin-top: 10px;
   margin-bottom: 15px;
-  overflow: hidden;
+  overflow-x: hidden;
 }
+
+
 
 .project-single-lang p {
   margin-right: 10px;
@@ -813,6 +815,13 @@
   margin-top: 30px;
 }
 
+.project-single-lang {
+  overflow-x: auto;
+}
+
+.project-single-lang::-webkit-scrollbar {
+  width: 0;
+}
 
 .project-single {
   width: 100%;

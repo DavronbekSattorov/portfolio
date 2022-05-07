@@ -11,6 +11,11 @@ export const projects = [
             'HTML',
             'CSS',
             'Sass',
+            'React',
+            'JavaScript',
+            'HTML',
+            'CSS',
+            'Sass',
         ]
     },
     {
