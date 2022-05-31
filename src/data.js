@@ -118,4 +118,17 @@ export const projects = [
         ]
 
     },
+{
+        name : 'Rock Paper Scissor',
+        link : 'https://starlit-cucurucho-01e86b.netlify.app/',
+        desc : 'Just play for fun',
+        githubLink: 'https://github.com/DavronbekSattorov/rock-paper-scissor',
+        type : 'new',
+        lang : [
+            'JavaScript',
+            'HTML',
+            'CSS',
+        ]
+
+    }
 ]
