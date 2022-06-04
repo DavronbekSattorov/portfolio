@@ -130,5 +130,18 @@ export const projects = [
             'CSS',
         ]
 
+    },
+    {
+        name : 'Memory Card Game',
+        link : 'https://deft-melomakarona-f35eaa.netlify.app',
+        desc : 'Sharp your memory',
+        githubLink: 'https://github.com/DavronbekSattorov/memory-card-game',
+        type : 'new',
+        lang : [
+            'JavaScript',
+            'HTML',
+            'CSS',
+        ]
+
     }
 ]
