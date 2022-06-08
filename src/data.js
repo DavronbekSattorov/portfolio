@@ -143,5 +143,21 @@ export const projects = [
             'CSS',
         ]
 
+    },
+     {
+        name : 'Guess the flag',
+        link : 'https://rainbow-valkyrie-2a9c73.netlify.app',
+        desc : 'How good do you know flags',
+        githubLink: 'https://github.com/DavronbekSattorov/find-flag',
+        type : 'new',
+        lang : [
+            'JavaScript',
+            'HTML',
+            'CSS',
+        ]
+
     }
+    
+    
+    
 ]
